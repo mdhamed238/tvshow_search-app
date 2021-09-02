@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            font-family: cursive;
+        }
+        h1 {
+            color: #023e8a;
+        }
+        .img{
+            margin: 8px 5px;
+            border-radius: 30px;
+            box-sizing: border-box;
+            transition: all 100ms;
+        }
+        .img:hover {
+            border: 3px solid #0077b6;
+        }
+        input , button {
+            padding: 5px 10px;
+            border: 2.5px solid #0077b6 ;
+            border-radius: 5px;
+            color: #023e8a;
+            font-weight: 600;
+        }
+        input:checked , input:hover {
+            border: 2.5px solid #023e8a;
+        }
+        button:hover {
+            background: #0077b6;
+            border:2.5px solid #023e8a;
+            color: #023e8a
+        }
+    </style>
+</head>
+<body>
+    <h1>TV Show Search App</h1>
+    <form action="" id="SearchForm">
+        <input type="text" name="query" placeholder="TV Show title">
+        <button>Search</button>
+    </form>
+  
+    <script src="app.js"></script>
+</body>
+</html>

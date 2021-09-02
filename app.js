@@ -18,7 +18,7 @@ const makeImages = (shows) => {
             showName = showName.replace(' ', '-')
             for(let char of showName) {
                 if(char === '') {           
-                    char.remove();
+                    showName = showName.replace(char , '');
                 }
             }   
             const year = result.show.premiered.slice(0,4)
@@ -27,7 +27,7 @@ const makeImages = (shows) => {
             link.href = `https://lake.egybest.life/series/${showName}-${year}/`;
             link.target = '_blank'
             link.append(img)
-            document.body.append(link)   
+            document.body.append(link);
         }
     }
 }

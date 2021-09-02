@@ -16,7 +16,11 @@ const makeImages = (shows) => {
             let showName = result.show.name
             showName.toLowerCase()
             showName = showName.replace(' ', '-')
-            showName = showName.replace('.', '')
+            for(let char of showName) {
+                if(char === '') {           
+                    char.remove();
+                }
+            }   
             const year = result.show.premiered.slice(0,4)
             img.src = result.show.image.medium
             img.classList.add('img')
